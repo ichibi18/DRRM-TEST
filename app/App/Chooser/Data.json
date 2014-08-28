@@ -1,0 +1,102 @@
+[
+    {
+        name: 'Evacuation Centers',
+        thumb: 'Evac2.png',
+        url: 'deped_beis',
+        tooltip: 'Map of public school/designated evacuation centers'				
+    },
+	
+	{
+        name: 'Climate Type',
+        thumb: 'Climate3.png',
+        url: 'pagasa_climate',
+        tooltip: 'Type I. Two pronounced season: dry from November to April and wet during the rest of the year, Type II. No dry season with a pronounced rainfall from November to January, Type III. Seasons are not very pronounced, relatively dry from November to April, and wet during the rest of the year, Type IV. Rainfall is more or less evenly distributed throughout the year'
+    },
+	
+	{
+        name: 'Flood Exit Points',
+        thumb: 'Flood.png',
+        url: 'ready_floodexitpoint',
+        tooltip: ''				
+    },
+	
+	{
+        name: 'Flood Hazard',
+        thumb: 'FloodHazard.png',
+        url: 'ready_flood50',
+        tooltip: 'Flood Hazard (1:50,000)'				
+    },
+	
+	{
+        name: 'Storm Surge',
+        thumb: 'StormSurge.png',
+        url: 'ready_stormsurge',
+        tooltip: ''				
+    },
+	
+	{
+        name: 'Ondoy Flood Height',
+        thumb: 'ondoy.png',
+        url: 'ondoy_floodheight',
+        tooltip: 'On the 26th of September 2009, Tropical Storm Ketsana intensified into a typhoon, which locals call typhoon Ondoy. Typhoon Ondoy struck the Philippines lashing central Luzon, including the national capital of Manila, at one point covering over 80% in water.'				
+    },
+	{
+        name: 'Ground Shaking',
+        thumb: 'GroundShaking.png',
+        url: 'ready_groundshaking',
+        tooltip: ''				
+    },
+	
+	{
+        name: 'Liquefaction',
+        thumb: 'Liquefaction.png',
+        url: 'ready_liquefaction',
+        tooltip: ''				
+    },
+	{
+        name: 'Ground Rupture',
+        thumb: 'rupture.png',
+        url: 'ready_groundrupture',
+        tooltip: ''				
+    },
+	{
+        name: 'Rain Induced</br>Landslide',
+        thumb: 'Landslide.png',
+        url: 'ready_raininducedlandslide',
+        tooltip: ''				
+    },
+	
+	{
+        name: 'Tsunami',
+        thumb: 'tsunami.png',
+        url: 'ready_tsunami',
+        tooltip: ''				
+    },
+	
+	{
+        name: 'Volcanic Hazard',
+        thumb: 'volcanic.png',
+        url: 'ready_volcanic',
+        tooltip: ''				
+    },
+		
+	{
+        name: 'Earthquake<br>Induced<br>Landslide',
+        thumb: 'Elandslide.png',
+        url: 'ready_landslideearthquake',
+        tooltip: ''				
+    },
+	{
+        name: 'Earthquake (USGS)',
+        thumb: 'equakeico.png',
+        url: '',
+        tooltip: 'USGS Earthquake data' 				
+    },
+	
+	
+	
+]
+
+
+
+

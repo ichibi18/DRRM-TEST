@@ -71,9 +71,7 @@ Ext.define('MyPath.mappanel',{
 				disabled:true,
 				handler:function(){				
 						
-					var window = Ext.create('MyPath.USGSdata',{});
-					window.show();	
-					/* var me=this.up();				
+					var me=this.up();				
 					var findThis = (me.getComponent('Search').getValue());					
 					var me=this.up().up();					
 					if  (me.map.getLayersByName('My Location').length > 0) {				
@@ -90,15 +88,24 @@ Ext.define('MyPath.mappanel',{
 										externalGraphic: "/app/chooser/icons/marker.png",				
 										graphicYOffset: -25,
 										graphicHeight: 35,
-										graphicTitle: findThis//"${name}"
+										graphicTitle: findThis
 								}}), 	
 								displayInLayerSwitcher: false,		
 							});							
 						Location.addFeatures([new OpenLayers.Feature.Vector(currLoc)]);						
 						me.map.addLayer(Location);						
 						me.map.zoomToExtent(Location.getDataExtent());			 		
-					})				*/		
+					})						
 				}			
+			},{			
+				xtype:'button',
+				text:'Max Extent',
+				handler:function(){
+					var me=this.up().up();					
+					console.log('test',me);
+					me.map.zoomToMaxExtent()			
+				}		
+			
 			}
 		]	
 	},
@@ -111,8 +118,7 @@ Ext.define('MyPath.mappanel',{
 		map = new OpenLayers.Map(				
 				{ 
 				controls: [
-					new OpenLayers.Control.Navigation(),
-					new OpenLayers.Control.LayerSwitcher(),
+					new OpenLayers.Control.Navigation(),					
 					new OpenLayers.Control.Zoom(),
 					new OpenLayers.Control.MousePosition(),				
 				],

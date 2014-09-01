@@ -36,17 +36,31 @@ Ext.application({
                 plugins: [{
                     ptype: "gx_layercontainer",
                     loader: {
-                        createNode: function(attr) {
-                            // add a WMS legend to each node created
-                            attr.component = {
-                                xtype: "gx_wmslegend",
-                                layerRecord: MapPanel.layers.getByLayer(attr.layer),
-                                showTitle: false,
-                                // custom class for css positioning
-                                // see tree-legend.html
-                                cls: "legend"
-                            };
-                            return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
+                        createNode: function(attr) {                            
+							
+							if (attr.text=="Earthquakes (USGS)"){
+								attr.component = {
+									xtype: "gx_overlaylayercontainer",
+									layerRecord: MapPanel.layers.getByLayer(attr.layer),
+									showTitle: false,
+									icon:'/app/chooser/icons/equake.png',
+									// custom class for css positioning
+									// see tree-legend.html
+									cls: "legend"
+								};
+								return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
+							}else{
+								// add a WMS legend to each node created
+								attr.component = {
+									xtype: "gx_wmslegend",
+									layerRecord: MapPanel.layers.getByLayer(attr.layer),
+									showTitle: false,
+									// custom class for css positioning
+									// see tree-legend.html
+									cls: "legend"
+								};
+								return GeoExt.tree.LayerLoader.prototype.createNode.call(this, attr);
+							}	
                         }
                     }
                 }]
@@ -83,7 +97,7 @@ Ext.application({
             items:[			
 				MapPanel,
 				ChooserPanel,
-				//tree
+				tree
             ]
         });	
     }
